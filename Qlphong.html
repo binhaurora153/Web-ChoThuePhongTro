@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web cho thuê phòng trọ</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/Qlphong.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- left -->
+
+      <div class="content__left">
+        <h2 class="heading">Quản lí phòng trọ</h2>
+        <div class="content__left-item">
+          <i class="fa-solid fa-house-user"></i>
+          <a class="item__link" href="./QLtoanha.html">Quản lí toà nhà</a>
+        </div>
+        <div class="content__left-item">
+          <i class="fa-solid fa-igloo"></i>
+          <a class="item__link" href="./Qlphong.html">Quản lí phòng</a>
+        </div>
+        <div class="content__left-item">
+          <i class="fa-solid fa-people-group"></i>
+          <a class="item__link" href="./QLkhachthue.html">Quản lí khách thuê</a>
+        </div>
+        <!--  -->
+        <div class="dropdown content__left-item">
+          <i class="fa-brands fa-servicestack"></i>
+          <a
+            class="btn dropdown-toggle item__link"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Quản lí dịch vụ
+          </a>
+          <ul class="dropdown-menu content__left-service">
+            <li>
+              <div class="dropdown-item content__left-item dv">
+                <i class="fa-solid fa-cloud-bolt"></i>
+                <a class="item__link" href="./dien.html">Điện</a>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown-item content__left-item dv">
+                <i class="fa-solid fa-water"></i>
+                <a class="item__link" href="./nuoc.html">Nước</a>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown-item content__left-item dv">
+                <i class="fa-solid fa-list"></i>
+                <a class="item__link" href="./dichvu.html">Dịch vụ khác</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content__left-item last">
+          <i class="fa-solid fa-coins"></i>
+          <a class="item__link" href="./QLtienthu.html">Quản lí tiền thu</a>
+        </div>
+        <div class="dangxuat" style="margin: 80px 0 0 10px">
+          <a href="./index.html">Đăng xuất</a>
+        </div>
+      </div>
+      <!-- right -->
+      <div class="content__right">
+        <h2 class="heading__right">Quản lí phòng</h2>
+        <div class="content__right-search">
+          <input type="search" class="search" placeholder="Nhập tìm kiếm..." />
+          <!--  dr-->
+          <div class="dropdown item__drop toanha">
+            <a
+              class="btn dropdown-toggle noboder"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Chọn toà nhà
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">An cựu 1</a></li>
+              <li><a class="dropdown-item" href="#">An cựu 2</a></li>
+              <li><a class="dropdown-item" href="#">An cựu 3</a></li>
+            </ul>
+          </div>
+          <!--  dr-->
+          <div class="dropdown item__drop trangthai">
+            <a
+              class="btn dropdown-toggle noboder"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Chọn trạng thái
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tất cả</a></li>
+              <li><a class="dropdown-item" href="#">Còn trống</a></li>
+              <li><a class="dropdown-item" href="#">Đang thuê</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a class="btn__right" href="./themphong.html">Thêm phòng</a>
+          <!-- <button class="btn__right">Thêm phòng</button> -->
+        </div>
+        <div class="content__right-center">
+          <!-- list1 -->
+          <div class="content__right-list">
+            <!-- item1 -->
+            <div class="right-list-item">
+              <div class="box box1">
+                <i class="fa-solid fa-person-booth"></i>
+                <h3 class="box__heading">101</h3>
+              </div>
+              <div class="box box2">
+                <i class="fa-solid fa-house-flag"></i>
+                <h3 class="box__desc">An cựu 1</h3>
+              </div>
+              <div class="box box3">
+                <i class="fa-solid fa-user"></i>
+                <h3 class="box__desc">Nguyễn Văn Nam</h3>
+              </div>
+              <div class="box box4">
+                <i class="fa-solid fa-coins"></i>
+                <h3 class="box__desc">3.000.000 đ</h3>
+              </div>
+              <div class="box box-btn">
+                <button class="btn-hover btn-chinhsua">
+                  <a href="./CSphong.html">Chỉnh sửa</a>
+                </button>
+                <button class="btn-hover btn-xoa">Xoá</button>
+              </div>
+            </div>
+            <!-- item2 -->
+            <div class="right-list-item">
+              <div class="box box1">
+                <i class="fa-solid fa-person-booth"></i>
+                <h3 class="box__heading">102</h3>
+              </div>
+              <div class="box box2">
+                <i class="fa-solid fa-house-flag"></i>
+                <h3 class="box__desc">An cựu 1</h3>
+              </div>
+              <div class="box box3">
+                <i class="fa-solid fa-user"></i>
+                <h3 class="box__desc">Trần Thu Trang</h3>
+              </div>
+              <div class="box box4">
+                <i class="fa-solid fa-coins"></i>
+                <h3 class="box__desc">3.000.000 đ</h3>
+              </div>
+              <div class="box box-btn">
+                <button class="btn-hover btn-chinhsua">
+                  <a href="./CSphong.html">Chỉnh sửa</a>
+                </button>
+                <button class="btn-hover btn-xoa">Xoá</button>
+              </div>
+            </div>
+            <!-- item3 -->
+            <div class="right-list-item">
+              <div class="box box1">
+                <i class="fa-solid fa-person-booth"></i>
+                <h3 class="box__heading">103</h3>
+              </div>
+              <div class="box box2">
+                <i class="fa-solid fa-house-flag"></i>
+                <h3 class="box__desc">An cựu 1</h3>
+              </div>
+              <div class="box box3">
+                <i class="fa-solid fa-user"></i>
+                <button class="btn_addkhach">
+                  <a class="box__desc" href="#">Thêm khách</a>
+                </button>
+              </div>
+              <div class="box box4">
+                <i class="fa-solid fa-coins"></i>
+                <h3 class="box__desc">3.000.000 đ</h3>
+              </div>
+              <div class="box box-btn">
+                <button class="btn-hover btn-chinhsua">
+                  <a href="./CSphong.html">Chỉnh sửa</a>
+                </button>
+                <button class="btn-hover btn-xoa">Xoá</button>
+              </div>
+            </div>
+            <!-- item4 -->
+            <div class="right-list-item">
+              <div class="box box1">
+                <i class="fa-solid fa-person-booth"></i>
+                <h3 class="box__heading">104</h3>
+              </div>
+              <div class="box box2">
+                <i class="fa-solid fa-house-flag"></i>
+                <h3 class="box__desc">An cựu 1</h3>
+              </div>
+              <div class="box box3">
+                <i class="fa-solid fa-user"></i>
+                <button class="btn_addkhach">
+                  <a class="box__desc" href="#">Thêm khách</a>
+                </button>
+              </div>
+              <div class="box box4">
+                <i class="fa-solid fa-coins"></i>
+                <h3 class="box__desc">3.000.000 đ</h3>
+              </div>
+              <div class="box box-btn">
+                <button class="btn-hover btn-chinhsua">
+                  <a href="./CSphong.html">Chỉnh sửa</a>
+                </button>
+                <button class="btn-hover btn-xoa">Xoá</button>
+              </div>
+            </div>
+            <!--  list2-->
+            <!--  -->
+          </div>
+          <!-- list2 -->
+          <div class="content__right-list">
+            <!-- item1 -->
+            <div class="right-list-item">
+              <div class="box box1">
+                <i class="fa-solid fa-person-booth"></i>
+                <h3 class="box__heading">101</h3>
+              </div>
+              <div class="box box2">
+                <i class="fa-solid fa-house-flag"></i>
+                <h3 class="box__desc">An cựu 1</h3>
+              </div>
+              <div class="box box3">
+                <i class="fa-solid fa-user"></i>
+                <button class="btn_addkhach">
+                  <a class="box__desc" href="#">Thêm khách</a>
+                </button>
+              </div>
+              <div class="box box4">
+                <i class="fa-solid fa-coins"></i>
+                <h3 class="box__desc">3.000.000 đ</h3>
+              </div>
+              <div class="box box-btn">
+                <button class="btn-hover btn-chinhsua">
+                  <a href="./CSphong.html">Chỉnh sửa</a>
+                </button>
+                <button class="btn-hover btn-xoa">Xoá</button>
+              </div>
+            </div>
+            <!-- item2 -->
+            <div class="right-list-item">
+              <div class="box box1">
+                <i class="fa-solid fa-person-booth"></i>
+                <h3 class="box__heading">102</h3>
+              </div>
+              <div class="box box2">
+                <i class="fa-solid fa-house-flag"></i>
+                <h3 class="box__desc">An cựu 1</h3>
+              </div>
+              <div class="box box3">
+                <i class="fa-solid fa-user"></i>
+                <button class="btn_addkhach">
+                  <a class="box__desc" href="#">Thêm khách</a>
+                </button>
+              </div>
+              <div class="box box4">
+                <i class="fa-solid fa-coins"></i>
+                <h3 class="box__desc">3.000.000 đ</h3>
+              </div>
+              <div class="box box-btn">
+                <button class="btn-hover btn-chinhsua">
+                  <a href="./CSphong.html">Chỉnh sửa</a>
+                </button>
+                <button class="btn-hover btn-xoa">Xoá</button>
+              </div>
+            </div>
+            <!-- item3 -->
+            <div class="right-list-item">
+              <div class="box box1">
+                <i class="fa-solid fa-person-booth"></i>
+                <h3 class="box__heading">103</h3>
+              </div>
+              <div class="box box2">
+                <i class="fa-solid fa-house-flag"></i>
+                <h3 class="box__desc">An cựu 3</h3>
+              </div>
+              <div class="box box3">
+                <i class="fa-solid fa-user"></i>
+                <h3 class="box__desc">Nguyễn Văn Toàn</h3>
+              </div>
+              <div class="box box4">
+                <i class="fa-solid fa-coins"></i>
+                <h3 class="box__desc">3.000.000 đ</h3>
+                <button class="btn_addkhach btn_traphong">
+                  <a class="box__desc" href="#">Trả phòng</a>
+                </button>
+              </div>
+              <div class="box box-btn">
+                <button class="btn-hover btn-chinhsua">
+                  <a href="./CSphong.html">Chỉnh sửa</a>
+                </button>
+                <button class="btn-hover btn-xoa">Xoá</button>
+              </div>
+            </div>
+            <!-- item4 -->
+            <div class="right-list-item">
+              <div class="box box1">
+                <i class="fa-solid fa-person-booth"></i>
+                <h3 class="box__heading">104</h3>
+              </div>
+              <div class="box box2">
+                <i class="fa-solid fa-house-flag"></i>
+                <h3 class="box__desc">An cựu 3</h3>
+              </div>
+              <div class="box box3">
+                <i class="fa-solid fa-user"></i>
+                <h3 class="box__desc">Trần Hà Nam</h3>
+              </div>
+              <div class="box box4">
+                <i class="fa-solid fa-coins"></i>
+                <h3 class="box__desc">3.000.000 đ</h3>
+                <button class="btn_addkhach btn_traphong">
+                  <a class="box__desc" href="#">Trả phòng</a>
+                </button>
+              </div>
+              <div class="box box-btn">
+                <button class="btn-hover btn-chinhsua">
+                  <a href="./CSphong.html">Chỉnh sửa</a>
+                </button>
+                <button class="btn-hover btn-xoa">Xoá</button>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="right__footer">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="btn-arrow">1</span>
+            <span class="btn-arrow">2</span>
+            <span class="btn-arrow">3</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <!-- <div class="return">
+          <i class="fa-solid fa-arrow-left"></i>
+          <a class="trove" href="./index.html">Return</a>
+        </div> -->
+      </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

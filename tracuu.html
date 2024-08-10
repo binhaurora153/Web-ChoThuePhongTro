@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web cho thuê phòng trọ</title>
+    <link rel="stylesheet" href="./assets/css/tracuu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="return">
+      <i class="fa-solid fa-arrow-left"></i>
+      <a class="trangchu" href="./index.html">Trở lại trang chủ</a>
+    </div>
+    <div class="container">
+      <h1>Thông tin thuê phòng</h1>
+      <div class="info">
+        <p>Khách thuê: <span>Nguyễn Văn Nam</span></p>
+        <p>
+          Thời gian: <input type="text" placeholder="11-2023" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </p>
+      </div>
+      <div class="details">
+        <div class="left-column">
+          <label for="building">Tòa nhà:</label>
+          <input type="text" id="building" value="An Cựu 1" readonly />
+
+          <label for="room">Phòng:</label>
+          <input type="text" id="room" value="101" readonly />
+
+          <label for="price">Giá phòng:</label>
+          <input type="text" id="price" value="3.000.000 Đ" readonly />
+
+          <label for="debt">Nợ cũ:</label>
+          <input type="text" id="debt" value="0 Đ" readonly />
+
+          <label for="paid">Đã thanh toán:</label>
+          <input type="text" id="paid" value="0 Đ" readonly />
+
+          <label for="total">Tổng tiền phải thanh toán:</label>
+        </div>
+        <div class="right-column">
+          <h3>Bảng dịch vụ</h3>
+          <table>
+            <tr>
+              <th>Tên</th>
+              <th>Số lượng</th>
+              <th>Thành tiền</th>
+            </tr>
+            <tr>
+              <td>Điện</td>
+              <td>150 kWh</td>
+              <td>450.000 Đ</td>
+            </tr>
+            <tr>
+              <td>Nước</td>
+              <td>15 m3</td>
+              <td>300.000 Đ</td>
+            </tr>
+            <tr>
+              <td>Rác</td>
+              <td>1</td>
+              <td>20.000 Đ</td>
+            </tr>
+            <tr>
+              <td>Internet 1</td>
+              <td>1</td>
+              <td>170.000 Đ</td>
+            </tr>
+          </table>
+          <p class="total-amount">3.940.000 Đ</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

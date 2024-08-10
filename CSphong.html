@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web cho thuê phòng trọ</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/CSphong.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- left -->
+
+      <div class="content__left">
+        <h2 class="heading">Quản lí phòng trọ</h2>
+        <div class="content__left-item">
+          <i class="fa-solid fa-house-user"></i>
+          <a class="item__link" href="./QLtoanha.html">Quản lí toà nhà</a>
+        </div>
+        <div class="content__left-item">
+          <i class="fa-solid fa-igloo"></i>
+          <a class="item__link" href="./Qlphong.html">Quản lí phòng</a>
+        </div>
+        <div class="content__left-item">
+          <i class="fa-solid fa-people-group"></i>
+          <a class="item__link" href="">Quản lí khách thuê</a>
+        </div>
+        <!--  -->
+        <div class="dropdown content__left-item">
+          <i class="fa-brands fa-servicestack"></i>
+          <a
+            class="btn dropdown-toggle item__link"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Quản lí dịch vụ
+          </a>
+          <ul class="dropdown-menu content__left-service">
+            <li>
+              <div class="dropdown-item content__left-item dv">
+                <i class="fa-solid fa-cloud-bolt"></i>
+                <a class="item__link" href="#">Điện</a>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown-item content__left-item dv">
+                <i class="fa-solid fa-water"></i>
+                <a class="item__link" href="#">Nước</a>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown-item content__left-item dv">
+                <i class="fa-solid fa-list"></i>
+                <a class="item__link" href="#">Dịch vụ khác</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content__left-item last">
+          <i class="fa-solid fa-coins"></i>
+          <a class="item__link" href="">Quản lí tiền thu</a>
+        </div>
+      </div>
+      <!-- right -->
+      <div class="content__right">
+        <h2 class="heading__right">Chỉnh sửa phòng</h2>
+        <div class="content__right-center">
+          <form class="edit-form">
+            <!-- form -->
+            <div class="form-contain">
+              <!-- form left -->
+              <div class="form-left">
+                <div class="form-group">
+                  <label for="room-name" class="name-item">Tên phòng *</label>
+                  <input
+                    class="input-item"
+                    type="text"
+                    id="room-name"
+                    value="101"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="width" class="name-item">Chiều rộng *</label>
+                  <input
+                    class="input-item"
+                    type="number"
+                    id="width"
+                    value="3"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="price" class="name-item">Giá phòng *</label>
+                  <input
+                    class="input-item"
+                    type="text"
+                    id="price"
+                    value="3.000.000"
+                  />
+                </div>
+              </div>
+              <!-- form right -->
+              <div class="form-right">
+                <div class="form-group">
+                  <label for="building">Tòa nhà *</label>
+                  <select class="input-item" id="building">
+                    <option>An Cựu 1</option>
+                    <option>An Cựu 2</option>
+                    <option>An Cựu 3</option>
+                    <option>An Cựu 4</option>
+                    <option>An Cựu 5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="length" class="name-item">Chiều dài *</label>
+                  <input
+                    class="input-item"
+                    type="number"
+                    id="length"
+                    value="5"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="max-people">Số lượng người tối đa *</label>
+                  <input
+                    class="input-item"
+                    type="number"
+                    id="max-people"
+                    value="3"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="description" class="name-item">Mô tả thêm</label>
+              <textarea id="description"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="btn-group">
+          <div class="form-buttons">
+            <button type="button" class="btn cancel">
+              <a href="./Qlphong.html">Huỷ</a>
+            </button>
+            <button type="submit" class="btn save">
+              <a href="./Qlphong.html">Lưu</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

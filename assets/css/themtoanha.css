@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4d8b3;
+}
+
+.container {
+  width: 320px;
+  margin: 50px auto;
+  background-color: #f8f4e8;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid #e88967;
+  position: relative;
+}
+
+.title {
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.edit-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #e88967;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.cancel {
+  background-color: #e94545;
+  color: #fff;
+}
+
+.btn.save {
+  background-color: #99b080;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+a {
+  text-decoration: none;
+}

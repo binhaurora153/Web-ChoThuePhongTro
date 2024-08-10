@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container-fluid {
+  display: flex;
+  width: 100vw;
+  height: 820px;
+  padding: 0;
+}
+
+/* left */
+.content__left {
+  width: 25%;
+  background-color: #e88967;
+  padding-top: 30px;
+}
+
+.heading {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.content__left-item {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  padding: 20px;
+  transition: 0.8s;
+}
+.content__left-item:hover {
+  background-color: #ffbb5c;
+  border-radius: 20px;
+}
+.item__link {
+  margin-left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.content__left-item.dv {
+  margin-left: 80px;
+  width: 218.5px;
+}
+
+.btn.dropdown-toggle.item__link {
+  margin-left: 12px;
+}
+.dropdown-menu.content__left-service {
+  background: none;
+  border: 0;
+}
+
+.content__left-item.last {
+  margin-top: 200px;
+}
+/* right */
+.content__right {
+  background-color: #f4d8b3;
+  width: 75%;
+  height: auto;
+  padding-top: 30px;
+}
+
+.heading__right {
+  font-size: 40px;
+  padding: 10px 10px 30px 40px;
+}
+
+/* --------------------- */
+.content__right-center {
+  background-color: #fff;
+  margin: auto;
+  width: 92%;
+  height: 60%;
+  border: 1px solid #e25e3e;
+}
+.edit-form {
+  width: 95%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.form-contain {
+  display: flex;
+  align-items: center;
+}
+.form-left {
+  width: 45%;
+  margin-right: 40px;
+}
+.form-right {
+  width: 50%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+label {
+  font-size: 16px;
+  color: #000;
+}
+.input-group {
+  display: flex;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e88967;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-item {
+  width: 300px;
+}
+#description {
+  margin-left: 20px;
+  width: 820px;
+  height: 45px;
+}
+/*  */
+.btn-group {
+  display: flex;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.btn-group .btn {
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+}
+.btn-group .btn:hover {
+  background-color: beige;
+}
+.cancel {
+  background-color: #e94545;
+}
+
+.save {
+  background-color: #99b080;
+}
+
+.form-buttons {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons a {
+  color: #000;
+  padding: 10px 50px;
+}
+a {
+  color: black;
+}
