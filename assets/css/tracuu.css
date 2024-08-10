@@ -1,16 +1,17 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background: #f2d4b2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f4d8b3;
 }
 .return {
-  padding-bottom: 100px;
+  margin-top: 20px;
   margin-left: 1200px;
   display: flex;
   align-items: center;
@@ -23,6 +24,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 .trangchu:hover {
   text-decoration: underline;
 }
@@ -30,7 +32,10 @@ a {
   margin-right: 5px;
 }
 
+/*  */
+
 .container {
+  margin: auto;
   background: white;
   border: 2px solid #cc3333;
   border-radius: 10px;
@@ -39,6 +44,7 @@ a {
 }
 
 h1 {
+  margin-top: 40px;
   color: #cc3333;
   text-align: center;
   margin-bottom: 20px;
@@ -46,14 +52,32 @@ h1 {
 
 .info {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.info p {
-  font-size: 1.1em;
+.ten {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  font-size: 19px;
 }
 
+.search-time {
+  position: relative;
+}
+
+.search-time .fa-magnifying-glass {
+  position: absolute;
+  top: 10px;
+  left: 320px;
+}
+.header__top span {
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
 .info input {
   border: 1px solid #cc3333;
   border-radius: 5px;
@@ -96,6 +120,9 @@ h1 {
 
 .right-column {
   flex: 1;
+}
+.right-column td {
+  height: 40px;
 }
 
 .right-column h3 {
