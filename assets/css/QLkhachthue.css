@@ -147,11 +147,24 @@ a {
   color: black;
   height: 40px;
   width: 40px;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 10px;
 }
 .edit_skill:hover {
-  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.remove_skill {
+  background-color: #c22626;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.remove_skill:hover {
+  opacity: 0.8;
 }
 /*  */
 .btn-hover:hover {
